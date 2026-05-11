@@ -20,9 +20,9 @@ export default function HomePage() {
 
         {/* Main Mission */}
         <h1 className="max-w-6xl text-5xl md:text-7xl font-bold leading-tight tracking-tight">
-          让一个产品流过的血，
+          让一个产品上流过的血，
           <br />
-          不再在另一个产品上重流。
+          不在另一个产品上重流。
         </h1>
 
         {/* Subtitle */}

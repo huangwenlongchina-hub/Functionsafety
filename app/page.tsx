@@ -1,148 +1,239 @@
 // app/page.tsx
 
-import Link from "next/link";
+import {
+  Shield,
+  AlertTriangle,
+  FileText,
+  Cpu,
+  Globe,
+  ArrowRight,
+  BrainCircuit,
+  Factory,
+  Plane,
+  Car,
+  HeartPulse,
+} from "lucide-react";
 
 export default function HomePage() {
   return (
     <main className="min-h-screen bg-black text-white overflow-hidden">
-      {/* Background Glow */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,#0f172a_0%,#000000_60%)]" />
+      {/* Background */}
+      <div className="fixed inset-0 bg-[radial-gradient(circle_at_center,rgba(0,255,180,0.12),transparent_40%)] pointer-events-none" />
+      <div className="fixed inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:60px_60px] pointer-events-none" />
 
-      {/* Grid Effect */}
-      <div className="absolute inset-0 opacity-10 bg-[linear-gradient(rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.08)_1px,transparent_1px)] bg-[size:40px_40px]" />
+      {/* Navbar */}
+      <header className="sticky top-0 z-50 backdrop-blur-xl border-b border-white/10 bg-black/70">
+        <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <div className="w-11 h-11 rounded-xl border border-emerald-400/40 bg-emerald-500/10 flex items-center justify-center">
+              <Shield className="w-5 h-5 text-emerald-400" />
+            </div>
+
+            <div className="text-2xl font-bold">
+              Function
+              <span className="text-emerald-400">Safety</span>
+            </div>
+          </div>
+
+          <nav className="hidden md:flex items-center gap-8 text-sm text-gray-300">
+            <a href="#" className="hover:text-emerald-400 transition">
+              Incidents
+            </a>
+
+            <a href="#" className="hover:text-emerald-400 transition">
+              Standards
+            </a>
+
+            <a href="#" className="hover:text-emerald-400 transition">
+              Products
+            </a>
+
+            <a href="#" className="hover:text-emerald-400 transition">
+              Certifications
+            </a>
+
+            <a href="#" className="hover:text-emerald-400 transition">
+              AI Safety
+            </a>
+
+            <a href="#" className="hover:text-emerald-400 transition">
+              Research
+            </a>
+          </nav>
+        </div>
+      </header>
 
       {/* Hero */}
-      <section className="relative z-10 flex flex-col items-center justify-center text-center px-6 pt-32 pb-24">
-        {/* Small Tag */}
-        <div className="mb-6 border border-emerald-500/30 bg-emerald-500/10 text-emerald-400 px-4 py-1 rounded-full text-sm tracking-wide">
-          Global Functional Safety Knowledge Network
-        </div>
-
-        {/* Main Mission */}
-        <h1 className="max-w-6xl text-5xl md:text-7xl font-bold leading-tight tracking-tight">
-          让一个产品上流过的血，
-          <br />
-          不在另一个产品上重流。
-        </h1>
-
-        {/* Subtitle */}
-        <p className="mt-8 max-w-3xl text-lg md:text-2xl text-gray-400 leading-relaxed">
-          从事故到标准，
-          从失败到更安全的未来。
-          <br />
-          建立全球功能安全事故、工程教训与 AI 时代安全知识网络。
-        </p>
-
-        {/* Quote */}
-        <div className="mt-10 max-w-4xl text-gray-500 text-base md:text-lg italic leading-relaxed">
-          “Every catastrophic failure contains a hidden law of safety.”
-          <br />
-          每一次灾难性失效，都隐藏着一条安全规律。
-        </div>
-
-        {/* CTA Buttons */}
-        <div className="mt-12 flex flex-wrap items-center justify-center gap-4">
-          <Link
-            href="/incidents"
-            className="px-8 py-4 rounded-xl bg-emerald-500 hover:bg-emerald-400 transition text-black font-semibold text-lg shadow-lg shadow-emerald-500/20"
-          >
-            Explore Global Incidents
-          </Link>
-
-          <Link
-            href="/standards"
-            className="px-8 py-4 rounded-xl border border-gray-700 hover:border-emerald-500 hover:text-emerald-400 transition text-lg"
-          >
-            Functional Safety Standards
-          </Link>
-        </div>
-      </section>
-
-      {/* Philosophy Section */}
-      <section className="relative z-10 px-6 py-24 border-t border-white/10">
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
-          <div className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-sm">
-            <h2 className="text-2xl font-semibold mb-4 text-emerald-400">
-              Safety is not the enemy of innovation.
-            </h2>
-
-            <p className="text-gray-300 leading-relaxed text-lg">
-              安全并不是阻止未来。
-              <br />
-              安全是：
-              <br />
-              让未来能够持续到来。
-            </p>
+      <section className="relative">
+        <div className="max-w-7xl mx-auto px-6 pt-28 pb-24">
+          <div className="inline-flex items-center gap-2 border border-emerald-400/20 bg-emerald-500/10 px-5 py-2 rounded-full text-emerald-300 text-sm mb-8">
+            <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+            Global Functional Safety Intelligence Platform
           </div>
 
-          <div className="bg-white/5 border border-white/10 rounded-3xl p-8 backdrop-blur-sm">
-            <h2 className="text-2xl font-semibold mb-4 text-cyan-400">
-              Complexity must remain under human control.
-            </h2>
+          <h1 className="text-5xl md:text-7xl font-black leading-tight max-w-6xl">
+            Let the Blood
+            <br />
+            Already Shed
+            <br />
+            <span className="text-emerald-400">
+              Never Be Shed Again
+            </span>
+          </h1>
 
-            <p className="text-gray-300 leading-relaxed text-lg">
-              文明最大的风险，
-              <br />
-              不是 AI 有意识。
-              <br />
-              而是：
-              <br />
-              复杂性脱离人类约束。
-            </p>
+          <p className="mt-10 text-xl text-gray-400 leading-relaxed max-w-4xl">
+            Cross-industry safety intelligence platform connecting
+            aviation, automotive, robotics, industrial automation,
+            medical systems, AI, and critical infrastructure.
+          </p>
+
+          <p className="mt-6 text-2xl text-white/90 font-semibold max-w-5xl leading-relaxed">
+            “Let the blood shed in one industry never flow again in another.
+            Let the blood shed by one product never flow again in another.”
+          </p>
+
+          <div className="flex flex-wrap gap-5 mt-12">
+            <button className="bg-emerald-400 hover:bg-emerald-300 text-black font-semibold px-8 py-4 rounded-2xl transition flex items-center gap-2 shadow-[0_0_40px_rgba(16,185,129,0.35)]">
+              Explore Global Incidents
+              <ArrowRight className="w-5 h-5" />
+            </button>
+
+            <button className="border border-white/15 hover:border-emerald-400/40 hover:bg-white/5 px-8 py-4 rounded-2xl transition">
+              Safety Standards Database
+            </button>
           </div>
         </div>
       </section>
 
-      {/* Core Structure */}
-      <section className="relative z-10 px-6 py-24">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold">
-              The Safety Evolution Chain
+      {/* Mission */}
+      <section className="relative py-24 border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <div className="text-emerald-400 uppercase tracking-widest text-sm mb-5">
+                Mission
+              </div>
+
+              <h2 className="text-4xl md:text-5xl font-bold leading-tight">
+                Safety Knowledge
+                <br />
+                Must Migrate
+                <br />
+                Faster Than Risk
+              </h2>
+
+              <p className="mt-8 text-gray-400 text-lg leading-relaxed">
+                Most industries investigate accidents only inside their own
+                domains. We build a system where safety lessons migrate across
+                technologies before the next tragedy occurs.
+              </p>
+
+              <p className="mt-6 text-gray-400 text-lg leading-relaxed">
+                Aviation incidents should teach autonomous vehicles.
+                Industrial robot failures should teach medical AI systems.
+                Nuclear safety philosophy should influence consumer electronics.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-2 gap-5">
+              {[
+                {
+                  icon: Plane,
+                  title: "Aviation",
+                },
+                {
+                  icon: Car,
+                  title: "Automotive",
+                },
+                {
+                  icon: Factory,
+                  title: "Industrial",
+                },
+                {
+                  icon: BrainCircuit,
+                  title: "AI Systems",
+                },
+              ].map((item, index) => (
+                <div
+                  key={index}
+                  className="border border-white/10 rounded-3xl p-8 bg-white/[0.03] hover:border-emerald-400/30 transition"
+                >
+                  <item.icon className="w-10 h-10 text-emerald-400 mb-5" />
+
+                  <div className="text-2xl font-semibold">
+                    {item.title}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Core Features */}
+      <section className="py-24 border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-center mb-20">
+            <div className="text-emerald-400 uppercase tracking-widest text-sm mb-4">
+              Core System
+            </div>
+
+            <h2 className="text-5xl font-bold">
+              Global Functional Safety Knowledge Graph
             </h2>
 
-            <p className="mt-4 text-gray-400 text-lg">
-              事故如何推动人类工业文明不断演化
+            <p className="mt-6 text-gray-400 text-xl max-w-4xl mx-auto">
+              Connecting accidents, standards, certifications,
+              system architectures, human factors, software failures,
+              and AI risks into one searchable intelligence network.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-5 gap-6">
+          <div className="grid lg:grid-cols-3 gap-8">
             {[
               {
-                title: "事故",
-                desc: "重大事故暴露系统性风险",
+                icon: AlertTriangle,
+                title: "Global Incident Database",
+                desc: "Deep investigations of aviation, automotive, medical, industrial, robotics, and AI safety incidents.",
               },
               {
-                title: "标准",
-                desc: "工程原则被写入国际标准",
+                icon: FileText,
+                title: "Standards Mapping",
+                desc: "Direct mapping between accidents and violated clauses from IEC 61508, ISO 26262, DO-178C, IEC 62304 and more.",
               },
               {
-                title: "产品",
-                desc: "安全设计进入工业产品",
+                icon: Cpu,
+                title: "Cross-Industry Lessons",
+                desc: "Transfer critical safety lessons across industries before similar failures emerge elsewhere.",
               },
               {
-                title: "认证",
-                desc: "形成全球安全验证体系",
+                icon: BrainCircuit,
+                title: "AI Safety Evolution",
+                desc: "Track the convergence of traditional functional safety and modern autonomous AI systems.",
               },
               {
-                title: "新复杂系统",
-                desc: "新的复杂性再次带来新风险",
+                icon: HeartPulse,
+                title: "Human Factors Analysis",
+                desc: "Understand operator psychology, training gaps, interface confusion, and organizational pressure.",
               },
-            ].map((item, index) => (
+              {
+                icon: Globe,
+                title: "Global Safety Intelligence",
+                desc: "Create a continuously evolving global memory of industrial civilization’s safety experience.",
+              },
+            ].map((feature, index) => (
               <div
                 key={index}
-                className="bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-emerald-500/40 transition"
+                className="rounded-3xl border border-white/10 bg-white/[0.03] p-8 hover:border-emerald-400/30 hover:bg-white/[0.05] transition"
               >
-                <div className="text-emerald-400 text-sm mb-3">
-                  STEP {index + 1}
-                </div>
+                <feature.icon className="w-10 h-10 text-emerald-400 mb-6" />
 
-                <h3 className="text-2xl font-bold mb-3">
-                  {item.title}
+                <h3 className="text-2xl font-bold mb-4">
+                  {feature.title}
                 </h3>
 
-                <p className="text-gray-400 leading-relaxed">
-                  {item.desc}
+                <p className="text-gray-400 leading-relaxed text-lg">
+                  {feature.desc}
                 </p>
               </div>
             ))}
@@ -150,76 +241,105 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Featured Incident */}
-      <section className="relative z-10 px-6 py-24 border-t border-white/10">
-        <div className="max-w-6xl mx-auto">
-          <div className="mb-12">
-            <div className="text-emerald-400 text-sm tracking-widest mb-4">
-              FEATURED DEEP ANALYSIS
+      {/* Featured Case */}
+      <section className="py-28 border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="rounded-[40px] border border-emerald-400/20 bg-gradient-to-br from-emerald-500/10 to-transparent p-12 overflow-hidden relative">
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(16,185,129,0.2),transparent_35%)]" />
+
+            <div className="relative z-10 max-w-5xl">
+              <div className="text-emerald-400 uppercase tracking-widest text-sm mb-4">
+                Featured Investigation
+              </div>
+
+              <h2 className="text-5xl font-black leading-tight">
+                Boeing 737 MAX
+                <br />
+                MCAS Catastrophe
+              </h2>
+
+              <p className="mt-8 text-xl text-gray-300 leading-relaxed">
+                Not just an aviation accident.
+                A systemic failure involving software architecture,
+                certification pressure, human factors,
+                automation trust, organizational culture,
+                safety communication, and global regulatory oversight.
+              </p>
+
+              <div className="grid md:grid-cols-4 gap-5 mt-12">
+                {[
+                  "Root Cause Analysis",
+                  "Standards Violations",
+                  "Human Factors",
+                  "Cross-Industry Lessons",
+                ].map((item, index) => (
+                  <div
+                    key={index}
+                    className="border border-white/10 rounded-2xl p-5 bg-black/30"
+                  >
+                    <div className="text-lg font-semibold">{item}</div>
+                  </div>
+                ))}
+              </div>
+
+              <button className="mt-12 bg-emerald-400 hover:bg-emerald-300 text-black font-bold px-8 py-4 rounded-2xl transition">
+                Read Full Investigation
+              </button>
             </div>
-
-            <h2 className="text-5xl font-bold mb-6">
-              Boeing 737 MAX MCAS
-            </h2>
-
-            <p className="max-w-3xl text-gray-400 text-lg leading-relaxed">
-              一个隐藏的自动控制系统，
-              一个单点传感器，
-              一场人类与自动化争夺控制权的灾难。
-              <br />
-              这不仅是航空事故，
-              更是 AI 时代复杂系统安全的重要预警。
-            </p>
           </div>
+        </div>
+      </section>
 
-          <div className="grid md:grid-cols-3 gap-6">
+      {/* Statistics */}
+      <section className="py-24 border-t border-white/10">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              "Single Point Failure",
-              "Hidden Automation",
-              "Human Override Failure",
-              "Certification Pressure",
-              "AI Safety Lessons",
-              "Cross-Industry Implications",
-            ].map((tag) => (
+              ["10,000+", "Incidents Tracked"],
+              ["500+", "Safety Standards"],
+              ["2,000+", "Certified Products"],
+              ["50+", "Industries Connected"],
+            ].map(([number, label], index) => (
               <div
-                key={tag}
-                className="border border-white/10 bg-white/5 rounded-xl p-5 text-center hover:border-emerald-500/40 transition"
+                key={index}
+                className="rounded-3xl border border-white/10 bg-white/[0.03] p-10 text-center"
               >
-                {tag}
+                <div className="text-5xl font-black text-emerald-400">
+                  {number}
+                </div>
+
+                <div className="mt-4 text-gray-400 text-lg">
+                  {label}
+                </div>
               </div>
             ))}
-          </div>
-
-          <div className="mt-10">
-            <Link
-              href="/incidents/boeing-737-max"
-              className="inline-flex items-center gap-2 text-emerald-400 hover:text-emerald-300 text-lg"
-            >
-              Read Deep Analysis →
-            </Link>
           </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="relative z-10 border-t border-white/10 py-12 px-6">
-        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+      <footer className="border-t border-white/10 py-12">
+        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between gap-6 text-gray-500">
           <div>
-            <div className="text-2xl font-bold text-emerald-400">
-              FunctionSafety.com
-            </div>
-
-            <div className="text-gray-500 mt-2">
-              Human Industrial Safety Memory
-              <br />
-              & AI Civilization Future
-            </div>
+            © 2026 FunctionSafety.com
           </div>
 
-          <div className="text-gray-600 text-sm text-center md:text-right">
-            Building the global safety knowledge network
-            <br />
-            for the AI era.
+          <div className="flex gap-8">
+            <a href="#" className="hover:text-emerald-400 transition">
+              About
+            </a>
+
+            <a href="#" className="hover:text-emerald-400 transition">
+              Research
+            </a>
+
+            <a href="#" className="hover:text-emerald-400 transition">
+              Standards
+            </a>
+
+            <a href="#" className="hover:text-emerald-400 transition">
+              Contact
+            </a>
           </div>
         </div>
       </footer>

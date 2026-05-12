@@ -1,366 +1,302 @@
 import {
   AlertTriangle,
-  Shield,
-  Car,
+  ShieldAlert,
   BrainCircuit,
+  Plane,
+  Cpu,
   Users,
-  FileWarning,
-  Globe,
 } from "lucide-react";
 
-export default function ToyotaUnintendedAccelerationPage() {
+export default function Boeing737MaxPage() {
   return (
     <main className="min-h-screen bg-black text-white">
-
       {/* HERO */}
       <section className="border-b border-zinc-900 bg-gradient-to-b from-zinc-950 to-black">
         <div className="max-w-7xl mx-auto px-6 py-24">
-
-          <div className="inline-flex items-center gap-2 border border-emerald-500/30 bg-emerald-500/10 text-emerald-400 px-5 py-2 rounded-full text-sm mb-10">
+          <div className="inline-flex items-center gap-2 border border-emerald-500/30 bg-emerald-500/10 rounded-full px-5 py-2 text-emerald-400 text-sm">
             <AlertTriangle size={16} />
-            全球汽车安全重点调查
+            全球航空安全重点调查
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-bold leading-tight max-w-6xl">
-            Toyota Unintended Acceleration
+          <h1 className="text-5xl md:text-7xl font-bold leading-tight max-w-6xl mt-10">
+            Boeing 737 MAX MCAS
           </h1>
 
-          <h2 className="text-3xl md:text-5xl font-bold text-emerald-400 mt-6 max-w-5xl">
-            当软件复杂性失控时
+          <h2 className="text-3xl md:text-5xl font-bold text-emerald-400 mt-8 max-w-5xl">
+            自动化时代的系统安全失效
           </h2>
 
-          <p className="text-zinc-400 text-xl mt-10 leading-relaxed max-w-4xl">
-            一场涉及软件复杂性、人机交互失败、隐藏系统状态以及组织安全缺陷的全球汽车安全危机。
+          <p className="text-zinc-400 text-xl mt-12 leading-relaxed max-w-5xl">
+            传感器依赖、隐藏的自动化行为、认证捷径、组织压力和人为因素如何结合成现代航空史上最严重的灾难之一。
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-20">
-
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
             <div className="border border-zinc-800 rounded-3xl p-8 bg-zinc-950">
-              <div className="text-5xl font-bold text-emerald-400">89+</div>
-              <div className="text-zinc-500 mt-4">
-                Reported Fatalities
-              </div>
+              <div className="text-emerald-400 text-5xl font-bold">346</div>
+              <div className="text-zinc-500 mt-4 text-xl">遇难人数</div>
             </div>
 
             <div className="border border-zinc-800 rounded-3xl p-8 bg-zinc-950">
-              <div className="text-5xl font-bold text-emerald-400">
-                9M+
-              </div>
-              <div className="text-zinc-500 mt-4">
-                Vehicles Recalled
-              </div>
+              <div className="text-emerald-400 text-5xl font-bold">2</div>
+              <div className="text-zinc-500 mt-4 text-xl">致命空难</div>
             </div>
 
             <div className="border border-zinc-800 rounded-3xl p-8 bg-zinc-950">
-              <div className="text-5xl font-bold text-emerald-400">
-                ECU
-              </div>
-              <div className="text-zinc-500 mt-4">
-                Software Complexity
-              </div>
+              <div className="text-emerald-400 text-5xl font-bold">1</div>
+              <div className="text-zinc-500 mt-4 text-xl">单一AOA传感器</div>
             </div>
 
             <div className="border border-zinc-800 rounded-3xl p-8 bg-zinc-950">
-              <div className="text-5xl font-bold text-emerald-400">
+              <div className="text-emerald-400 text-5xl font-bold">
                 Global
               </div>
-              <div className="text-zinc-500 mt-4">
-                Automotive Safety Impact
-              </div>
+              <div className="text-zinc-500 mt-4 text-xl">全球航空影响</div>
             </div>
-
           </div>
         </div>
       </section>
 
       {/* TIMELINE */}
-      <section className="border-b border-zinc-900">
-        <div className="max-w-5xl mx-auto px-6 py-28">
-
-          <div className="flex items-center gap-3 text-emerald-400 mb-8">
-            <div className="w-4 h-4 rounded-full bg-emerald-400"></div>
+      <section className="border-b border-zinc-900 py-28">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-emerald-400 uppercase tracking-[0.3em] text-sm mb-8">
             事故时间线
           </div>
 
-          <h2 className="text-5xl md:text-6xl font-bold mb-24">
-            丰田意外加速危机时间线
+          <h2 className="text-5xl md:text-7xl font-bold mb-20">
+            波音737 MAX MCAS危机时间线
           </h2>
 
-          <div className="space-y-20 border-l border-zinc-800 pl-10">
-
+          <div className="space-y-16 border-l border-zinc-800 pl-10">
             <div className="relative">
-              <div className="absolute -left-[49px] top-1 w-6 h-6 rounded-full bg-emerald-400"></div>
+              <div className="absolute -left-[49px] top-1 w-5 h-5 bg-emerald-400 rounded-full" />
 
-              <div className="text-emerald-400 text-2xl font-bold mb-4">
-                2002
-              </div>
+              <div className="text-emerald-400 text-xl font-bold">2011</div>
 
-              <h3 className="text-4xl font-bold mb-6">
-                初期意外加速投诉出现
+              <h3 className="text-4xl font-bold mt-4">
+                波音启动737 MAX项目
               </h3>
 
-              <p className="text-zinc-400 text-xl leading-relaxed">
-                全球开始出现大量丰田车辆“突然加速”投诉，
-                涉及多个车型和电子油门系统。
+              <p className="text-zinc-400 text-xl mt-6 leading-relaxed">
+                为了与空客A320neo竞争，波音决定快速修改传统737平台，而不是设计新飞机。
               </p>
             </div>
 
             <div className="relative">
-              <div className="absolute -left-[49px] top-1 w-6 h-6 rounded-full bg-emerald-400"></div>
+              <div className="absolute -left-[49px] top-1 w-5 h-5 bg-emerald-400 rounded-full" />
 
-              <div className="text-emerald-400 text-2xl font-bold mb-4">
-                2007
-              </div>
+              <div className="text-emerald-400 text-xl font-bold">2016</div>
 
-              <h3 className="text-4xl font-bold mb-6">
-                软件安全疑虑开始浮现
+              <h3 className="text-4xl font-bold mt-4">
+                MCAS被引入飞控系统
               </h3>
 
-              <p className="text-zinc-400 text-xl leading-relaxed">
-                工程调查逐渐发现电子节气门控制系统的软件架构
-                存在复杂性和实时性问题。
+              <p className="text-zinc-400 text-xl mt-6 leading-relaxed">
+                为解决机动特性问题，MCAS自动配平系统被加入，并依赖单一AOA传感器。
               </p>
             </div>
 
             <div className="relative">
-              <div className="absolute -left-[49px] top-1 w-6 h-6 rounded-full bg-red-500"></div>
+              <div className="absolute -left-[49px] top-1 w-5 h-5 bg-red-500 rounded-full" />
 
-              <div className="text-red-500 text-2xl font-bold mb-4">
-                2009
+              <div className="text-red-400 text-xl font-bold">
+                2018年10月29日
               </div>
 
-              <h3 className="text-4xl font-bold mb-6">
-                San Diego 致命事故
+              <h3 className="text-4xl font-bold mt-4">
+                Lion Air 610 空难
               </h3>
 
-              <p className="text-zinc-400 text-xl leading-relaxed">
-                一辆 Lexus ES350 高速失控，
-                导致一家四口死亡，
-                全球开始聚焦丰田电子控制安全。
+              <p className="text-zinc-400 text-xl mt-6 leading-relaxed">
+                MCAS错误触发，飞机反复压低机头，最终坠海，189人遇难。
               </p>
             </div>
 
             <div className="relative">
-              <div className="absolute -left-[49px] top-1 w-6 h-6 rounded-full bg-yellow-400"></div>
+              <div className="absolute -left-[49px] top-1 w-5 h-5 bg-red-500 rounded-full" />
 
-              <div className="text-yellow-400 text-2xl font-bold mb-4">
-                2010
+              <div className="text-red-400 text-xl font-bold">
+                2019年3月10日
               </div>
 
-              <h3 className="text-4xl font-bold mb-6">
-                全球大规模召回
+              <h3 className="text-4xl font-bold mt-4">
+                Ethiopian Airlines 302 空难
               </h3>
 
-              <p className="text-zinc-400 text-xl leading-relaxed">
-                丰田全球召回超过900万辆汽车，
-                成为汽车史上最严重的软件安全事件之一。
+              <p className="text-zinc-400 text-xl mt-6 leading-relaxed">
+                与Lion Air极其相似的问题再次发生，157人遇难，全球开始停飞737 MAX。
               </p>
             </div>
-
-            <div className="relative">
-              <div className="absolute -left-[49px] top-1 w-6 h-6 rounded-full bg-cyan-400"></div>
-
-              <div className="text-cyan-400 text-2xl font-bold mb-4">
-                2013
-              </div>
-
-              <h3 className="text-4xl font-bold mb-6">
-                NASA 软件分析报告
-              </h3>
-
-              <p className="text-zinc-400 text-xl leading-relaxed">
-                NASA发现软件存在任务饥饿、
-                内存破坏、栈溢出、
-                全局变量复杂度失控等问题。
-              </p>
-            </div>
-
           </div>
         </div>
       </section>
 
       {/* ROOT CAUSE */}
-      <section className="border-b border-zinc-900">
-        <div className="max-w-7xl mx-auto px-6 py-28">
-
-          <div className="flex items-center gap-3 text-emerald-400 mb-8">
-            <BrainCircuit size={18} />
-            ROOT CAUSE ANALYSIS
+      <section className="border-b border-zinc-900 py-28">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-emerald-400 uppercase tracking-[0.3em] text-sm mb-8">
+            Root Cause Analysis
           </div>
 
-          <h2 className="text-5xl md:text-7xl font-bold max-w-6xl leading-tight">
+          <h2 className="text-5xl md:text-7xl font-bold max-w-6xl">
             Systemic Root Cause Tree
           </h2>
 
-          <p className="text-zinc-400 text-2xl leading-relaxed mt-12 max-w-5xl">
-            丰田事件不是单一机械故障，
-            而是软件复杂性、系统架构、
-            人机交互和组织安全文化共同作用的结果。
+          <p className="text-zinc-400 text-2xl mt-12 leading-relaxed max-w-5xl">
+            波音737 MAX灾难并非单一软件Bug，而是工程、组织、认证、人机交互和商业压力共同作用的系统性安全失败。
           </p>
 
-          <div className="grid md:grid-cols-3 gap-8 mt-24">
-
+          <div className="grid md:grid-cols-3 gap-8 mt-20">
             <div className="border border-emerald-500/20 rounded-3xl p-10 bg-zinc-950">
-              <div className="text-emerald-400 text-sm tracking-widest mb-8">
-                ROOT CAUSE 01
-              </div>
+              <Cpu className="text-emerald-400 mb-6" size={40} />
 
-              <h3 className="text-3xl font-bold mb-6">
-                软件复杂性失控
+              <h3 className="text-3xl font-bold">
+                单传感器依赖
               </h3>
 
-              <p className="text-zinc-400 text-lg leading-relaxed">
-                ECU软件包含大量全局变量、
-                非隔离任务和复杂状态机，
-                已超出可验证范围。
+              <p className="text-zinc-400 text-lg mt-6 leading-relaxed">
+                MCAS依赖单个AOA传感器，没有冗余验证机制。
               </p>
             </div>
 
             <div className="border border-yellow-500/20 rounded-3xl p-10 bg-zinc-950">
-              <div className="text-yellow-400 text-sm tracking-widest mb-8">
-                ROOT CAUSE 02
-              </div>
+              <BrainCircuit className="text-yellow-400 mb-6" size={40} />
 
-              <h3 className="text-3xl font-bold mb-6">
-                缺乏独立安全层
+              <h3 className="text-3xl font-bold">
+                隐藏自动化
               </h3>
 
-              <p className="text-zinc-400 text-lg leading-relaxed">
-                节气门控制与安全机制
-                未完全隔离，
-                单点失效可能导致危险输出。
+              <p className="text-zinc-400 text-lg mt-6 leading-relaxed">
+                飞行员并不知道MCAS存在，缺乏透明性和可解释性。
               </p>
             </div>
 
             <div className="border border-red-500/20 rounded-3xl p-10 bg-zinc-950">
-              <div className="text-red-400 text-sm tracking-widest mb-8">
-                ROOT CAUSE 03
-              </div>
+              <Users className="text-red-400 mb-6" size={40} />
 
-              <h3 className="text-3xl font-bold mb-6">
-                Driver Override不足
+              <h3 className="text-3xl font-bold">
+                组织与认证压力
               </h3>
 
-              <p className="text-zinc-400 text-lg leading-relaxed">
-                驾驶员在关键时刻
-                无法快速理解或压制系统行为，
-                自动化开始压倒人类。
+              <p className="text-zinc-400 text-lg mt-6 leading-relaxed">
+                市场竞争压力导致安全让位于商业速度。
               </p>
             </div>
-
           </div>
         </div>
       </section>
 
-      {/* LESSONS */}
-      <section className="border-b border-zinc-900">
-        <div className="max-w-7xl mx-auto px-6 py-28">
-
-          <div className="flex items-center gap-3 text-emerald-400 mb-8">
-            <Car size={18} />
-            自动驾驶的经验教训
+      {/* SAFETY PRINCIPLES */}
+      <section className="border-b border-zinc-900 py-28">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-emerald-400 uppercase tracking-[0.3em] text-sm mb-8">
+            Violated Safety Principles
           </div>
 
-          <h2 className="text-5xl md:text-7xl font-bold leading-tight max-w-6xl">
-            自动驾驶系统必须学习的内容
+          <h2 className="text-5xl md:text-7xl font-bold">
+            被违反的安全原则
           </h2>
 
-          <p className="text-zinc-400 text-2xl leading-relaxed mt-12 max-w-5xl">
-            如果传统ECU软件已经能复杂到难以验证，
-            那么AI自动驾驶若缺少安全架构，
-            风险将呈指数级上升。
-          </p>
+          <div className="grid md:grid-cols-2 gap-8 mt-20">
+            <div className="border border-zinc-800 rounded-3xl p-10">
+              <ShieldAlert className="text-red-400 mb-6" size={40} />
 
-          <div className="grid md:grid-cols-2 gap-10 mt-24">
-
-            <div className="border border-emerald-500/20 rounded-3xl p-12 bg-zinc-950">
-              <div className="text-emerald-400 text-sm tracking-widest mb-8">
-                LESSON 01
-              </div>
-
-              <h3 className="text-4xl font-bold mb-8">
-                Complexity Is Itself a Hazard
+              <h3 className="text-3xl font-bold">
+                Fail-safe Principle
               </h3>
 
-              <p className="text-zinc-400 text-xl leading-relaxed">
-                当软件复杂性超过人类理解能力时，
-                验证本身就会失效。
+              <p className="text-zinc-400 text-lg mt-6 leading-relaxed">
+                单一错误不应导致灾难性后果。
               </p>
             </div>
 
-            <div className="border border-yellow-500/20 rounded-3xl p-12 bg-zinc-950">
-              <div className="text-yellow-400 text-sm tracking-widest mb-8">
-                LESSON 02
-              </div>
+            <div className="border border-zinc-800 rounded-3xl p-10">
+              <Plane className="text-yellow-400 mb-6" size={40} />
 
-              <h3 className="text-4xl font-bold mb-8">
-                AI Must Remain Explainable
+              <h3 className="text-3xl font-bold">
+                Human-Centered Design
               </h3>
 
-              <p className="text-zinc-400 text-xl leading-relaxed">
-                自动驾驶系统绝不能在关键安全时刻
-                变成无法解释的黑盒。
+              <p className="text-zinc-400 text-lg mt-6 leading-relaxed">
+                自动化系统必须可理解、可预测、可控制。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* AUTONOMOUS LESSONS */}
+      <section className="border-b border-zinc-900 py-28">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="text-emerald-400 uppercase tracking-[0.3em] text-sm mb-8">
+            Autonomous Driving Lessons
+          </div>
+
+          <h2 className="text-5xl md:text-7xl font-bold max-w-5xl">
+            自动驾驶必须学习的教训
+          </h2>
+
+          <div className="grid md:grid-cols-2 gap-8 mt-20">
+            <div className="border border-emerald-500/20 rounded-3xl p-10">
+              <h3 className="text-4xl font-bold">
+                永远不要只相信一个传感器
+              </h3>
+
+              <p className="text-zinc-400 text-xl mt-8 leading-relaxed">
+                自动驾驶必须具备传感器冗余、交叉验证和故障诊断。
               </p>
             </div>
 
-            <div className="border border-cyan-500/20 rounded-3xl p-12 bg-zinc-950">
-              <div className="text-cyan-400 text-sm tracking-widest mb-8">
-                LESSON 03
-              </div>
-
-              <h3 className="text-4xl font-bold mb-8">
-                Human Override Must Always Exist
+            <div className="border border-yellow-500/20 rounded-3xl p-10">
+              <h3 className="text-4xl font-bold">
+                隐藏自动化会摧毁信任
               </h3>
 
-              <p className="text-zinc-400 text-xl leading-relaxed">
-                人类必须永远拥有
-                最终控制权。
+              <p className="text-zinc-400 text-xl mt-8 leading-relaxed">
+                AI系统必须透明、可解释、可接管。
               </p>
             </div>
-
-            <div className="border border-red-500/20 rounded-3xl p-12 bg-zinc-950">
-              <div className="text-red-400 text-sm tracking-widest mb-8">
-                LESSON 04
-              </div>
-
-              <h3 className="text-4xl font-bold mb-8">
-                Safety Cannot Depend on Assumptions
-              </h3>
-
-              <p className="text-zinc-400 text-xl leading-relaxed">
-                所有“正常情况下不会发生”的假设，
-                最终都会在现实中被打破。
-              </p>
-            </div>
-
           </div>
         </div>
       </section>
 
       {/* SAFETY PHILOSOPHY */}
-      <section>
-        <div className="max-w-6xl mx-auto px-6 py-32">
-
-          <div className="border border-emerald-500/20 rounded-[40px] bg-gradient-to-br from-emerald-950/30 to-black p-16">
-
-            <div className="text-emerald-400 tracking-[0.3em] text-sm mb-10">
-              SAFETY PHILOSOPHY
-            </div>
-
-            <h2 className="text-5xl md:text-7xl font-bold leading-tight max-w-5xl">
-              Complexity itself becomes a form of risk.
-            </h2>
-
-            <p className="text-zinc-400 text-2xl leading-relaxed mt-14 max-w-5xl">
-              现代工程灾难越来越不是来自零件失效，
-              而是来自：
-              人类已经无法完全理解的复杂系统。
-            </p>
-
+      <section className="border-b border-zinc-900 py-28">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="text-emerald-400 uppercase tracking-[0.3em] text-sm mb-8">
+            安全理念
           </div>
+
+          <h2 className="text-6xl md:text-8xl font-bold leading-tight">
+            人类为何重蹈
+            <br />
+            安全失败
+          </h2>
+
+          <p className="text-zinc-400 text-2xl mt-16 leading-relaxed max-w-5xl">
+            每一次灾难性事故都是人类文明的映照。技术失效之前，往往是安全哲学先失败。
+          </p>
         </div>
       </section>
 
+      {/* CROSS INDUSTRY */}
+      <section className="py-28">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="border border-emerald-500/20 rounded-[40px] p-16 bg-gradient-to-br from-emerald-950/20 to-black">
+            <div className="text-emerald-400 uppercase tracking-[0.3em] text-sm mb-8">
+              Safety Transfer Philosophy
+            </div>
+
+            <h2 className="text-5xl md:text-7xl font-bold leading-tight max-w-5xl">
+              Safety knowledge must travel faster than tragedy.
+            </h2>
+
+            <p className="text-zinc-400 text-2xl mt-12 leading-relaxed max-w-4xl">
+              人类必须在下一场灾难发生前，把安全经验跨行业传播。
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }

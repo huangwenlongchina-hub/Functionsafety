@@ -279,10 +279,10 @@ export default function HomePage() {
 
               <div className="grid md:grid-cols-4 gap-5 mt-12">
                 {[
-                  "Root Cause Analysis",
-                  "Safety Violations",
-                  "Human Factors",
-                  "AI Safety Lessons",
+                  "Software Failure",
+                  "Embedded Systems",
+                  "Human Override",
+                  "Automotive Safety",
                 ].map((item, index) => (
                   <div
                     key={index}
@@ -297,6 +297,12 @@ export default function HomePage() {
 
               <a
                  href="/incidents/boeing-737-max-mcas"
+                 className="inline-flex items-center justify-center rounded-2xl bg-emerald-400 text-black px-8 py-4 text-xl font-bold hover:bg-emerald-300 transition"
+                 >
+                  Read Full Investigation
+              </a>
+              <a
+                 href="/incidents/toyota-unintended-acceleration"
                  className="inline-flex items-center justify-center rounded-2xl bg-emerald-400 text-black px-8 py-4 text-xl font-bold hover:bg-emerald-300 transition"
                  >
                   Read Full Investigation

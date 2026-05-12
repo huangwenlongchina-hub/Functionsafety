@@ -4,13 +4,12 @@ import {
   Shield,
   AlertTriangle,
   FileText,
-  Cpu,
+  BrainCircuit,
   Globe,
   ArrowRight,
-  BrainCircuit,
-  Factory,
   Plane,
   Car,
+  Factory,
   HeartPulse,
 } from "lucide-react";
 
@@ -18,18 +17,19 @@ export default function HomePage() {
   return (
     <main className="min-h-screen bg-black text-white overflow-hidden">
       {/* Background */}
-      <div className="fixed inset-0 bg-[radial-gradient(circle_at_center,rgba(0,255,180,0.12),transparent_40%)] pointer-events-none" />
-      <div className="fixed inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:60px_60px] pointer-events-none" />
+      <div className="fixed inset-0 bg-[radial-gradient(circle_at_top,rgba(16,185,129,0.15),transparent_40%)] pointer-events-none" />
+
+      <div className="fixed inset-0 bg-[linear-gradient(rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:60px_60px] pointer-events-none opacity-40" />
 
       {/* Navbar */}
       <header className="sticky top-0 z-50 backdrop-blur-xl border-b border-white/10 bg-black/70">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-11 h-11 rounded-xl border border-emerald-400/40 bg-emerald-500/10 flex items-center justify-center">
+            <div className="w-11 h-11 rounded-xl border border-emerald-400/30 bg-emerald-500/10 flex items-center justify-center">
               <Shield className="w-5 h-5 text-emerald-400" />
             </div>
 
-            <div className="text-2xl font-bold">
+            <div className="text-2xl font-bold tracking-tight">
               Function
               <span className="text-emerald-400">Safety</span>
             </div>
@@ -55,58 +55,67 @@ export default function HomePage() {
             <a href="#" className="hover:text-emerald-400 transition">
               AI Safety
             </a>
-
-            <a href="#" className="hover:text-emerald-400 transition">
-              Research
-            </a>
           </nav>
         </div>
       </header>
 
       {/* Hero */}
       <section className="relative">
-        <div className="max-w-7xl mx-auto px-6 pt-28 pb-24">
-          <div className="inline-flex items-center gap-2 border border-emerald-400/20 bg-emerald-500/10 px-5 py-2 rounded-full text-emerald-300 text-sm mb-8">
+        <div className="max-w-7xl mx-auto px-6 pt-32 pb-28">
+          <div className="inline-flex items-center gap-2 border border-emerald-400/20 bg-emerald-500/10 text-emerald-300 px-5 py-2 rounded-full text-sm tracking-wide mb-8">
             <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
             Global Functional Safety Intelligence Platform
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-black leading-tight max-w-6xl">
-            Let the Blood
+          <h1 className="text-5xl md:text-7xl font-black leading-tight tracking-tight max-w-6xl">
+            Human Industrial
             <br />
-            Already Shed
+            Safety Knowledge
             <br />
             <span className="text-emerald-400">
-              Never Be Shed Again
+              Network
             </span>
           </h1>
 
           <p className="mt-10 text-xl text-gray-400 leading-relaxed max-w-4xl">
-            Cross-industry safety intelligence platform connecting
-            aviation, automotive, robotics, industrial automation,
-            medical systems, AI, and critical infrastructure.
+            Transforming global safety failures into
+            cross-industry engineering intelligence.
+            <br />
+            Connecting accidents, standards, certifications,
+            AI systems, and industrial safety evolution.
           </p>
 
-          <p className="mt-6 text-2xl text-white/90 font-semibold max-w-5xl leading-relaxed">
-            “Let the blood shed in one industry never flow again in another.
-            Let the blood shed by one product never flow again in another.”
-          </p>
+          {/* Mission Quote */}
+          <div className="mt-14 max-w-5xl">
+            <div className="text-2xl md:text-3xl font-semibold leading-relaxed text-white">
+              Let the blood once shed by one product
+              <br />
+              never be shed again by another.
+            </div>
 
-          <div className="flex flex-wrap gap-5 mt-12">
+            <div className="mt-6 text-2xl md:text-3xl text-emerald-400 font-semibold leading-relaxed">
+              让一个产品流过的血，
+              <br />
+              不再在另一个产品重流。
+            </div>
+          </div>
+
+          {/* CTA */}
+          <div className="flex flex-wrap gap-5 mt-14">
             <button className="bg-emerald-400 hover:bg-emerald-300 text-black font-semibold px-8 py-4 rounded-2xl transition flex items-center gap-2 shadow-[0_0_40px_rgba(16,185,129,0.35)]">
               Explore Global Incidents
               <ArrowRight className="w-5 h-5" />
             </button>
 
             <button className="border border-white/15 hover:border-emerald-400/40 hover:bg-white/5 px-8 py-4 rounded-2xl transition">
-              Safety Standards Database
+              Functional Safety Standards
             </button>
           </div>
         </div>
       </section>
 
       {/* Mission */}
-      <section className="relative py-24 border-t border-white/10">
+      <section className="py-24 border-t border-white/10">
         <div className="max-w-7xl mx-auto px-6">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -117,21 +126,20 @@ export default function HomePage() {
               <h2 className="text-4xl md:text-5xl font-bold leading-tight">
                 Safety Knowledge
                 <br />
-                Must Migrate
+                Must Travel
                 <br />
                 Faster Than Risk
               </h2>
 
               <p className="mt-8 text-gray-400 text-lg leading-relaxed">
-                Most industries investigate accidents only inside their own
-                domains. We build a system where safety lessons migrate across
-                technologies before the next tragedy occurs.
+                Most industries investigate accidents only within
+                their own domains.
               </p>
 
               <p className="mt-6 text-gray-400 text-lg leading-relaxed">
-                Aviation incidents should teach autonomous vehicles.
-                Industrial robot failures should teach medical AI systems.
-                Nuclear safety philosophy should influence consumer electronics.
+                FunctionSafety builds a global safety knowledge
+                migration network where engineering lessons transfer
+                across industries before similar tragedies occur again.
               </p>
             </div>
 
@@ -175,17 +183,20 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-20">
             <div className="text-emerald-400 uppercase tracking-widest text-sm mb-4">
-              Core System
+              Core Intelligence System
             </div>
 
             <h2 className="text-5xl font-bold">
-              Global Functional Safety Knowledge Graph
+              Global Functional Safety
+              <br />
+              Knowledge Graph
             </h2>
 
-            <p className="mt-6 text-gray-400 text-xl max-w-4xl mx-auto">
-              Connecting accidents, standards, certifications,
-              system architectures, human factors, software failures,
-              and AI risks into one searchable intelligence network.
+            <p className="mt-6 text-gray-400 text-xl max-w-4xl mx-auto leading-relaxed">
+              Connecting incidents, standards, certifications,
+              human factors, software failures,
+              AI risks, and industrial system evolution
+              into one global safety intelligence platform.
             </p>
           </div>
 
@@ -194,32 +205,32 @@ export default function HomePage() {
               {
                 icon: AlertTriangle,
                 title: "Global Incident Database",
-                desc: "Deep investigations of aviation, automotive, medical, industrial, robotics, and AI safety incidents.",
+                desc: "Deep investigations into catastrophic engineering failures and systemic safety breakdowns.",
               },
               {
                 icon: FileText,
                 title: "Standards Mapping",
-                desc: "Direct mapping between accidents and violated clauses from IEC 61508, ISO 26262, DO-178C, IEC 62304 and more.",
-              },
-              {
-                icon: Cpu,
-                title: "Cross-Industry Lessons",
-                desc: "Transfer critical safety lessons across industries before similar failures emerge elsewhere.",
+                desc: "Direct relationships between accidents and violated functional safety principles.",
               },
               {
                 icon: BrainCircuit,
-                title: "AI Safety Evolution",
-                desc: "Track the convergence of traditional functional safety and modern autonomous AI systems.",
+                title: "Cross-Industry Lessons",
+                desc: "Transfer safety knowledge across aviation, automotive, robotics, AI, and medicine.",
+              },
+              {
+                icon: Shield,
+                title: "Safety Migration Warnings",
+                desc: "Identify hidden risk patterns migrating into emerging technologies.",
               },
               {
                 icon: HeartPulse,
                 title: "Human Factors Analysis",
-                desc: "Understand operator psychology, training gaps, interface confusion, and organizational pressure.",
+                desc: "Understand operator confusion, automation trust, and control authority loss.",
               },
               {
                 icon: Globe,
-                title: "Global Safety Intelligence",
-                desc: "Create a continuously evolving global memory of industrial civilization’s safety experience.",
+                title: "AI Civilization Safety",
+                desc: "Exploring the future relationship between AI, complexity, and human control.",
               },
             ].map((feature, index) => (
               <div
@@ -241,15 +252,15 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Featured Case */}
+      {/* Featured Investigation */}
       <section className="py-28 border-t border-white/10">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="rounded-[40px] border border-emerald-400/20 bg-gradient-to-br from-emerald-500/10 to-transparent p-12 overflow-hidden relative">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(16,185,129,0.2),transparent_35%)]" />
+          <div className="rounded-[40px] border border-emerald-400/20 bg-gradient-to-br from-emerald-500/10 to-transparent p-12 relative overflow-hidden">
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(16,185,129,0.18),transparent_35%)]" />
 
             <div className="relative z-10 max-w-5xl">
               <div className="text-emerald-400 uppercase tracking-widest text-sm mb-4">
-                Featured Investigation
+                Featured World Investigation
               </div>
 
               <h2 className="text-5xl font-black leading-tight">
@@ -259,25 +270,27 @@ export default function HomePage() {
               </h2>
 
               <p className="mt-8 text-xl text-gray-300 leading-relaxed">
-                Not just an aviation accident.
-                A systemic failure involving software architecture,
-                certification pressure, human factors,
-                automation trust, organizational culture,
-                safety communication, and global regulatory oversight.
+                Not only an aviation accident.
+                <br />
+                A universal warning for autonomous systems,
+                hidden automation, certification pressure,
+                and the future of AI-controlled technologies.
               </p>
 
               <div className="grid md:grid-cols-4 gap-5 mt-12">
                 {[
                   "Root Cause Analysis",
-                  "Standards Violations",
+                  "Safety Violations",
                   "Human Factors",
-                  "Cross-Industry Lessons",
+                  "AI Safety Lessons",
                 ].map((item, index) => (
                   <div
                     key={index}
                     className="border border-white/10 rounded-2xl p-5 bg-black/30"
                   >
-                    <div className="text-lg font-semibold">{item}</div>
+                    <div className="text-lg font-semibold">
+                      {item}
+                    </div>
                   </div>
                 ))}
               </div>
@@ -322,19 +335,21 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between gap-6 text-gray-500">
           <div>
             © 2026 FunctionSafety.com
+            <br />
+            Human Industrial Safety Knowledge Network
           </div>
 
           <div className="flex gap-8">
             <a href="#" className="hover:text-emerald-400 transition">
-              About
-            </a>
-
-            <a href="#" className="hover:text-emerald-400 transition">
-              Research
+              Incidents
             </a>
 
             <a href="#" className="hover:text-emerald-400 transition">
               Standards
+            </a>
+
+            <a href="#" className="hover:text-emerald-400 transition">
+              Research
             </a>
 
             <a href="#" className="hover:text-emerald-400 transition">

@@ -295,9 +295,12 @@ export default function HomePage() {
                 ))}
               </div>
 
-              <button className="mt-12 bg-emerald-400 hover:bg-emerald-300 text-black font-bold px-8 py-4 rounded-2xl transition">
-                Read Full Investigation
-              </button>
+              <a
+                 href="/incidents/boeing-737-max-mcas"
+                 className="inline-flex items-center justify-center rounded-2xl bg-emerald-400 text-black px-8 py-4 text-xl font-bold hover:bg-emerald-300 transition"
+                 >
+                  Read Full Investigation
+              </a>
             </div>
           </div>
         </div>
